@@ -2,14 +2,15 @@ import os
 from flask import Flask, render_template, redirect, request, session
 import sqlite3 as sq
 from werkzeug.security import check_password_hash, generate_password_hash
-import database as db
+from database import create_data
 
 
 # Preparation ------------------------------------------------------------
 app = Flask(__name__)
 app.secret_key = os.urandom(24)
 
-db = sq.connect("data/students_database.db")
+create_data()
+connect = sq.connect("data/students_database.db")
 
 ######################################## HOME PAGE ########################################################
 @app.route("/")
