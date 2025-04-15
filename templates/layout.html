@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sentan-NaviV2: {% block title %}{% endblock %}</title>
+    </head>
+
+    <body>
+        <nav>
+            <div>
+              <div>
+                <a href="/">WebSiteName</a>
+              </div>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+              </ul>
+              <ul>
+                <li><a href="#"><span></span>Register</a></li>
+                <li><a href="/login"><span></span>Login</a></li>
+              </ul>
+            </div>
+          </nav>
+
+        <main>
+            {% block main %}{% endblock %}
+        </main>
+    </body>
+</html>

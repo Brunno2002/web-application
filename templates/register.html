@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <h1>Register</h1>
+    <form action="/register" method="post">
+        {% if error %}
+        <div role="alert">
+            {{ error }}
+        </div>
+        {% endif %}
+        <div>
+            <input autocomplete="off" autofocus name="student_id" placeholder="Student ID">
+            
+        </div>
+        <div>
+            <input autocomplete="off" name="password" type="password">
+        </div>
+        <button type="submit">Log In</button>
+    </form>
+{% endblock %}
