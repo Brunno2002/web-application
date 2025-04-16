@@ -1,0 +1,4 @@
+# change myvenv to your venv name
+
+.myvenv/
+

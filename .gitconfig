@@ -1,0 +1,4 @@
+# change John and email and run these lines one on your terminal
+
+git config --global user.name "John something"
+git config --global user.email hello@gmail.com
